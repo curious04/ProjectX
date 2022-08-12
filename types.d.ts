@@ -1,11 +1,17 @@
 export interface Video {
     caption: string;
-    content: {
+    video: {
       asset: {
         _id: string;
         url: string;
       };
     };
+    photo: {
+        asset: {
+          _id: string;
+          url: string;
+        };
+      };
     _id: string;
     postedBy: {
       _id: string;
